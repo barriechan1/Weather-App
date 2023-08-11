@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather V1</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
+      integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="src/index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <form id="search-bar">
+          <input
+            class="search-bar"
+            id="city-search"
+            type="search"
+            placeholder="Search city or zip code or else"
+            type="submit"
+          />
+        </form>
+      </div>
+
+      <div id="current-button"><button>Current Location</button></div>
+
+      <div class="main-weather">
+        <div class="row">
+          <div class="col-8">
+            <h1>Portland</h1>
+            <h2 class="todays-date-and-time" id="todays-date-and-time"></h2>
+            <div id="main-emoji">☁️</div>
+            <div id="main-temp"></div>
+            <span class="fahrenheit-celsius">
+              <a href="#" id="fahrenheit"> F</a> |
+              <a href="#" id="celsius">C</a>
+            </span>
+          </div>
+          <div class="col-2">
+            <div class="accents1">
+              Sunrise
+              <br />
+              Sunset
+              <br />
+              High/Low
+              <br />
+              Humidity
+              <br />
+              Wind
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="accents2">
+              5:32am
+              <br />
+              8:59pm
+              <br />
+              72º/59º
+              <br />
+              75%
+              <br />
+              1%
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="test">
+        <div class="five-day">
+          <h2>5 day forecast</h2>
+
+          <div class="row">
+            <div class="col">
+              <div class="emoji">☁️</div>
+              <div class="fivedaytemp">72º</div>
+              Mon 10
+            </div>
+            <div class="col">
+              <div class="emoji">🌤</div>
+              <div class="fivedaytemp">77º</div>
+              Tue 11
+            </div>
+            <div class="col">
+              <div class="emoji">☀️</div>
+              <div class="fivedaytemp">80º</div>
+              Wed 12
+            </div>
+            <div class="col">
+              <div class="emoji">☀️</div>
+              <div class="fivedaytemp">82º</div>
+              Thu 13
+            </div>
+            <div class="col">
+              <div class="emoji">☀️</div>
+              <div class="fivedaytemp">89º</div>
+              Fri 14
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hourly-forecast">
+        <h2>Hourly forecast</h2>
+        <div class="row hourly">
+          <div class="col">
+            <div class="hourlyemoji">☁️</div>
+            <div class="hourlytemp">60º</div>
+            7:00
+          </div>
+          <div class="col">
+            <div class="hourlyemoji">☁️</div>
+            <div class="hourlytemp">61º</div>
+            8:00
+          </div>
+          <div class="col">
+            <div class="hourlyemoji">☁️</div>
+            <div class="hourlytemp">63º</div>
+            9:00
+          </div>
+          <div class="col">
+            <div class="hourlyemoji">☁️</div>
+            <div class="hourlytemp">65º</div>
+            10:00
+          </div>
+          <div class="col">
+            <div class="hourlyemoji">☁️</div>
+            <div class="hourlytemp">66º</div>
+            11:00
+          </div>
+          <div class="col">
+            <div class="hourlyemoji">☁️</div>
+            <div class="hourlytemp">69º</div>
+            7:00
+          </div>
+          <div class="col">
+            <div class="hourlyemoji">☁️</div>
+            <div class="hourlytemp">72º</div>
+            12:00
+          </div>
+          <div class="col">
+            <div class="hourlyemoji">☁️</div>
+            <div class="hourlytemp">72º</div>
+            13:00
+          </div>
+          <div class="col">
+            <span class="arrow">></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
